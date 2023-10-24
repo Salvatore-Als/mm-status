@@ -119,7 +119,7 @@ void Command_Status(const CCommandContext &context, const CCommand &args)
 			g_SMAPI->Format(szSteamID, sizeof(szSteamID), "%s", steamid);
 		}
 
-		g_SMAPI->ClientConPrintf(slot, "#%d %s %s\n", slot.Get(), name, szSteamID);
+		g_SMAPI->ClientConPrintf(slot, "#%d %s %s\n", i, name, szSteamID);
 	}
 
 	g_SMAPI->ClientConPrintf(slot, "--------------------------------\n");
